@@ -1,0 +1,92 @@
+{% extends 'base/base.html' %}
+
+{% block hero %}
+{% endblock hero %}
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="#">Biblioteca</a></li>
+        <li>Usuarios</li>
+      </ol>
+      <h2>Registrar usuarios</h2>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input class="form-control" type="text" name="first_name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input class="form-control" type="text" name="last_name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label>Nombre de usuario</label>
+                    <input class="form-control" type="text" name="username">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input class="form-control" type="text" name="email">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input class="form-control" type="password" name="password1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <label>Confirmar contraseña</label>
+                    <input class="form-control" type="password" name="password2">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

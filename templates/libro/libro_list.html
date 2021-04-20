@@ -1,0 +1,51 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block hero %}
+{% endblock hero %}
+
+{% block content %}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="{% url 'index_biblioteca' %}">Biblioteca</a></li>
+        <li>Listado</li>
+      </ol>
+      <h2>Libros disponibles</h2>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="row">
+            {% if libroT %}
+            {% for libro in libroT %}
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <img src="{% static 'img/libro.png' %}" class="testimonial-img" alt="">
+                    <h3>{{ libro.titulo }}</h3>
+                    <h4>{{ libro.autor }} &amp; {{ libro.tema }}</h4>
+                    <a href="{{ libro.link }}" target="_blank">Ver libro</a>
+                    <!--<a href="https://{{ libro.link }}" target="_blank"><button>my button </button></a> -->
+                    <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        {{ libro.resumen }}
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+                <h1>No hay libros registrados</h1>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

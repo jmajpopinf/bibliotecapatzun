@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+
+{% block hero %}
+{% endblock hero %}
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="#">Biblioteca</a></li>
+        <li>Registrar</li>
+      </ol>
+      <h2>Registrar libro</h2>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section>
+<div class="container">
+  <form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class = "btn btn-primary" type="submit">Guardar</button>
+  <a class ="btn btn-success" href="{% url 'index_dashboard' %}">Dashboard</a>
+  </form> 
+</div>
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

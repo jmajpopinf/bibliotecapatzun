@@ -1,0 +1,34 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+<title>{% block title %}Biblioteca Patzún{% endblock %}</title>
+
+{% block content %}
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="{% static 'img/about1.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <h3>QUIENES SOMOS.</h3>
+          <p class="fst-italic">
+            La biblioteca es un espacio agradable y accesible, orientada a docentes, estudiantes y universitarios, referente informativo para la gestión y transmisión del conocimiento donde las nuevas tecnologías esten al alcance de todos.
+            Orientado a:
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Docentes</li>
+            <li><i class="bi bi-check-circle"></i> Estudiantes</li>
+            <li><i class="bi bi-check-circle"></i> Universitarios</li>
+          </ul>
+          <p>
+            Esto para facilitar la investigación y el conocimiento de los estudiantes de diferentes niveles educativos. Promover la lectura para el desarrollo integral.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+{% endblock content %}

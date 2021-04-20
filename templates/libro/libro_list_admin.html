@@ -1,0 +1,70 @@
+{% extends 'base/base.html' %}
+
+{% block hero %}
+{% endblock hero %}
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="#">Biblioteca</a></li>
+        <li>Listado</li>
+      </ol>
+      <h2>Libros disponibles</h2>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Titulo</td>
+                <td>Autor</td>
+                <td>Pais</td>
+                <td>Editorial</td>
+                <td>Edición</td>
+                <td>Tema</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% if object_list %}
+            {% for libro in object_list %}
+            <tr>
+                <td>{{ libro.id }}</td>
+                <td>{{ libro.titulo }}</td>
+                <td>{{ libro.autor }}</td>
+                <td>{{ libro.pais }}</td>
+                <td>{{ libro.editorial }}</td>
+                <td>{{ libro.edicion }}</td>
+                <td>{{ libro.tema }}</td>
+                <td>
+                    <a class="btn btn-primary" href="{% url 'libro_editar' libro.id %}">Editar</a>
+                    <a class="btn btn-danger" href="{% url 'libro_eliminar' libro.id %}">eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+            {% else %}
+            <h1>No hay reggistros de mascotas</h1>
+            {% endif %}
+        </tbody>
+    </table>
+
+    <a class ="btn btn-success" href="{% url 'index_dashboard' %}">Dashboard</a>
+</div>
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

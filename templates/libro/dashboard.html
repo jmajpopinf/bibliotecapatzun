@@ -1,0 +1,68 @@
+{% extends 'base/base.html' %}
+
+{% block hero %}
+{% endblock hero %}
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="#">Biblioteca</a></li>
+        <li>Dashboard</li>
+      </ol>
+      <h2>Administrar biblioteca</h2>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<!-- ======= Featured Section ======= -->
+<section id="featured" class="featured">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="icon-box">
+                    <i class="bi bi-card-checklist"></i>
+                    <h3><a href="{% url 'libro_registrar' %}">Nuevo libro</a></h3>
+                    <p>Ingresar nuevos libros</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="icon-box">
+                    <i class="bi bi-card-checklist"></i>
+                    <h3><a href="{% url 'libro_listar' %}">Editar libros</a></h3>
+                    <p>Editar información de libros registrados</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="icon-box">
+                    <i class="bi bi-card-checklist"></i>
+                    <h3><a href="{% url 'index_biblioteca' %}">Ir a Pagina principal</a></h3>
+                    <p>Ir a pagina princial de la biblioteca</p>
+                </div>
+            </div>
+            
+            <div>
+                <br>
+                <a  href="{% url 'logout' %}">Salir</a>
+            </div>
+            
+        </div>
+    </div>
+</section><!-- End Featured Section -->
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
