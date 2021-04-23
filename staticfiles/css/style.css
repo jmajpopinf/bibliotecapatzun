@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #545454;
+  background: #111111;
   padding: 10px 0;
   font-size: 14px;
 }
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #545454;
+  color: #111111;
   text-decoration: none;
 }
 
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #545454;
+  color: #111111;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -179,11 +179,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #e96b56;
+  color: #e03a3c;
 }
 
 .navbar .getstarted {
-  background: #e96b56;
+  background: #e03a3c;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #ec7f6d;
+  background: #e03a3c;
 }
 
 .navbar .dropdown ul {
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #545454;
+  color: #111111;
 }
 
 .navbar .dropdown ul a i {
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #e96b56;
+  color: #e03a3c;
 }
 
 .navbar .dropdown:hover > ul {
@@ -409,14 +409,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #2e2e2e;
+  color: #111111;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
 }
 
 #hero h2 span {
-  color: #e96b56;
+  color: #e03a3c;
 }
 
 #hero p {
@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: arken(#545454, 15);
+  color: arken(#111111, 15);
 }
 
 #hero .carousel-inner .carousel-item {
@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li {
   cursor: pointer;
-  background: #e96b56;
+  background: #e03a3c;
   overflow: hidden;
   border: 0;
   width: 12px;
@@ -630,7 +630,7 @@ section {
 }
 
 .featured .icon-box i {
-  color: #e96b56;
+  color: #e03a3c;
   font-size: 42px;
   margin-bottom: 15px;
   display: block;
@@ -669,7 +669,7 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #545454;
+  color: #111111;
 }
 
 .about .content ul {
@@ -684,7 +684,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #e96b56;
+  color: #e03a3c;
 }
 
 .about .content p:last-child {
@@ -2006,7 +2006,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #404040;
+  background: #1b1b1b;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -2014,7 +2014,7 @@ section {
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #404040;
+  background: #111111;
 }
 
 #footer .footer-newsletter h4 {
