@@ -8,7 +8,7 @@ gunicorn==20.1.0
 isort==4.3.21
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
-Pillow==8.1.0
+Pillow==10.0.1
 psycopg2==2.8.5
 pylint==2.4.4
 python-decouple==3.4
